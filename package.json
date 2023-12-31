@@ -1,0 +1,13 @@
+{
+  "name": "shop-spectra",
+  "version": "1.0.0",
+  "description": "Welcome to ShopSpectra, your comprehensive Mall Management System that brings the shopping experience to your fingertips! ShopSpectra offers a centralized platform where you can explore and engage with a network of seven diverse malls spread across different parts of India",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd project-root/Backend && npm install && npm run build && cd ../Frontend && npm install && npm run build && cd ../Backend && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
