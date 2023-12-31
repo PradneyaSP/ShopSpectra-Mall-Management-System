@@ -6,9 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd ./Backend && npm install && cd ../Frontend && npm install && cd ../Backend",
-    "start": "cd ./Frontend && npm start & cd ../Backend && npm start"
+    "start": "concurrently \"npm --prefix ./Frontend start\" \"npm --prefix ./Backend start\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
 }
