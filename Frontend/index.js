@@ -4,8 +4,8 @@ import dotenv from "dotenv"
 dotenv.config();
 
 const app = express();
-const port = 3000;
-const db_port = process.env.PORT;
+const port = process.env.PORT || 3000;
+const db_port = process.env.DB_PORT || 8081;
 let isLoggedIn = false;
 let loggedInCustomer = null;
 
